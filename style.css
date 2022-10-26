@@ -218,3 +218,16 @@ nav ul li {
      /* margin-left: 260px; */
      font-size: 12px;
 }
+#text {
+     display: flex;
+     justify-content: space-around ;
+     margin-top: 21px;
+     border-top: solid 1px #424245;
+}
+#text ul{
+     margin-top: 20px;
+}
+#text ul li {
+     color: #424245;
+     font-size: 12px;
+}

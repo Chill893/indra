@@ -201,16 +201,14 @@ html,
         font-size: 24px;
         padding: 0px;
       }
-      .img h3::after{
+      .img h3:hover::after{
         content: "\003E";
         margin-left: 10px;
-        display: none;
       }
       .img h3:hover {
         display: block;
         transform: scaleX(1.1);
         transition: 0.5s;
-        content: "\003E";
       }
       .img h2 {
         grid-area: 5 / 2 / 5 / 9;
@@ -236,9 +234,22 @@ html,
       }
       .cardcontent {
         border: 2px solid #30AC9F;
+        width: 360px;
+        height: 300px;
       }
       .cardcontent h3,p {
         color: #fff;
+      }
+      .cardcontent h3, p ,span {
+        margin-left: 15px;
+      }
+      .cardcontent h3 {
+        font-size: 24px;
+        margin-top: 25px;
+      }
+      .cardcontent p {
+        font-size: 14px;
+        margin-top: 20px;
       }
       .cardcontent h3 {
         font-weight: 300;

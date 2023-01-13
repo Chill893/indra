@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'myfont';
+  src: url(./RobotGo-x3xx0.ttf) format('truetype');
+}
 body {
     background-color: #000 !important;
 }
@@ -10,6 +14,10 @@ nav {
     width: 100%;
     z-index: 10;
 }
+.david {
+  display: block;
+  transform: translateY(10px);
+}
 nav .row .col-md-3 img {
     background-color: rgb(0, 0, 0);
 }
@@ -20,6 +28,8 @@ nav .row ul {
 nav .row ul li {
     list-style: none;
     margin: 20px 35px;
+    font-family: 'myfont', cursive;
+    font-weight: 300;
 }
 nav .row ul li a {
     text-decoration: none;
@@ -30,99 +40,113 @@ nav .row ul li a {
     font-size: 30px;
     margin: 10px;
 }
+.cart{
+  transform: translateY(8px);
+}
 .center {
     display: flex;
     justify-content: space-around !important;
     align-items: center !important;
 }
-
+.active {
+  color: #30AC9F !important;
+}
 /* footer heseg */
-
-.footer {
-    display: flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(0, 0, 0);
-    justify-content: center;
-    gap: 100px
+footer {
+  width: 100%;
+}
+.footer-top {
+  background-color: #000;
+  height: 46vh;
+  font-family: 'myfont';
+}
+.footer-bot {
+  background-color: #30AC9F;
+  height: 19vh;
+}
+footer .col-md-6 {
+  display: flex;
+}
+footer ul {
+  margin-top: 90px;
+  margin-right: 100px;
+}
+footer ul h3 {
+  color: #30AC9F;
+  font-weight: 100;
+  font-size: 20px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+}
+.mailing {
+  justify-content: space-evenly;
+}
+.mailing>input {
+  background-color: #30AC9F;
+  border: none;
+  height: 20vh;
+  width: 40%;
+  color: #fff;
+  margin-top: 60px;
+  font-size: 50px;
+  display: block;
+  transform: translateX(-40px);
+}
+.mailing>input:hover {
+  background-color: #D3360E;
+  transition: 0.4s;
+}
+.mailing h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.subscribe {
+  width: 40%;
+  height: 33vh;
+  background-color: #30AC9F;
+  margin-top: 60px;
+  padding: 30px;
+}
+.subscribe input {
+  border-radius: 3px;
+  border: 2px solid #fff;
+  width: 97%;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.butt {
+  background-color: #30AC9F;
+  margin-top: 15px;
+  color: #fff;
+}
+.subscribe input:nth-child(3)::after{
+  content: ' \003E';
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  transform: translateX(20px) !important;
+  padding-left: 30px !important;
+  margin-top: 25px;
+}
+footer .col-md-1 a {
+  text-decoration: none;
+  color: #fff;
+  transform: translateY(25px) !important;
+  display: block;
 }
 
-.footer h3 {
-    color: #30ac9f;
-
-}
-
-.footer p {
-    color: white;
-
-}
-
-.footer_item {
-    font-size: 50px;
-    background-color: #30ac9f;
-    border-width: 0px !important;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-
-}
-
-.footer_item:hover {
-    background-color: red;
-    transition: 1s;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-.footer_item_1 {
-
-    background-color: #30ac9f;
-    text-align: left;
-    font-size: 20px;
-    padding: 0px 20px 20px 20px;
-    width: 200px;
-    margin: 10px;
-}
-
-.footer_item_1 input {
-    padding: 15px 10px;
-    border-radius: 5px;
-    border: 0;
-    width: 91%; 
-}
-
-.footer_item_1 .submit button {
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color: #30ac9f;
-    width: 100%;
-
-}
-
-
-.footer_text {
-    background-color: #30ac9f;
-    text-align: center;
-    color: white;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.footer_text p {
-    margin-top: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 /* swiper style */
 html,
       body {
@@ -201,14 +225,15 @@ html,
         font-size: 24px;
         padding: 0px;
       }
-      .img h3:hover::after{
-        content: "\003E";
-        margin-left: 10px;
+      .img h3 i {
+        display: none;
+      }
+      .img h3:hover i{
+        display: inline;
       }
       .img h3:hover {
-        display: block;
-        transform: scaleX(1.1);
-        transition: 0.5s;
+        transform: scale(1.1);
+        transition: 1s;
       }
       .img h2 {
         grid-area: 5 / 2 / 5 / 9;
@@ -225,7 +250,8 @@ html,
         border: none !important;
         background-color: #000 !important;
         border-radius: 0px;
-        margin: 40px auto;
+        margin: 40px 0;
+        transform: translateX(35px);
       }
       .cardimg img{
         width: 360px;
@@ -254,7 +280,9 @@ html,
       .cardcontent h3 {
         font-weight: 300;
       }
-      .cardcontent span {
+      #third a {
         color: #30AC9F;
+        text-decoration: none;
       }
+      
       

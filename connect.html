@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - David Mach</title>
+    <link rel="stylesheet" href="connect.css">
     <link rel="website icon" href="./img/logo.png" type="png">
-    <link rel="stylesheet" href="home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <title>CONNECT - David Mach</title>
 </head>
 <body>
     <nav>
@@ -24,11 +24,11 @@
                 </div>
                 <div class="col-md-9">
                     <ul>
-                        <li><a href="./home.html" class="active">HOME</a></li>
+                        <li><a href="./home.html">HOME</a></li>
                         <li><a href="./gallery.html">GALLERY</a></li>
                         <li><a href="./redsofa.html">RED SOFA</a></li>
                         <li><a href="">BUY DAVID'S WORK</a></li>
-                        <li><a href="./connect.html">CONNECT</a></li>
+                        <li><a href="./connect.html" class="active">CONNECT</a></li>
                         <li><a href="./bio.html">BIOGRAPHY</a></li>
                     </ul>
                 </div>
@@ -48,74 +48,45 @@
         </div>
     </nav>
     <section class="main">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="./img/tiger-header.jpg" alt="swiper1">
-                </div>
-                <div class="swiper-slide">
-                <img src="./img/slider-4-min.jpg" alt="swiper2">
-                </div>
-                <div class="swiper-slide">
-                <img src="./img/chaplin.jpg" alt="swiper3">
-                </div>
-                <div class="swiper-slide">
-                <img src="./img/Mach_1_Edinburgh.gif" alt="swiper4">
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            </div>
-    </section>
-    <section id="second">
-        <div class="container ">
-            <div class="img">
-                <h3>SHOP NOW
-                    <i class="bi bi-chevron-right"></i>
-                </h3>
-                <h2>ALL THE LATEST PRINTS AND ART IN OUR SHOP</h2>
-            </div>
-        </div>
-    </section>
-    <section id="third">
         <div class="container">
-            <div class="h1">
-                <h1>Latest News</h1>
-            </div>
             <div class="row">
-                <div class="col card">
-                    <div class="cardimg">
-                        <img src="./img/card1.gif" alt="card1">
-                    </div>
-                    <div class="cardcontent">
-                        <h3>THE IRN CURTAIN</h3>
-                        <span>Apr 1, 2021</span>
-                        <p>We are really excited to share with you David's brand new and most daring project to date.Over 100 miles long, stretching from the Solway Firth on the West coast of Scotland to Berwick and Marshall Meadows Bay on its East coast, David is...</p>
-                    </div>
+                <div class="col-md-6">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./img/devil.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/picasse.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gorrila.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/david_orange_match_head_sculpture_david_mach_2009_mhs.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
-                <div class="col card">
-                    <div class="cardimg">
-                        <img src="./img/card2.gif" alt="">
+                <div class="col-md-6 right">
+                    <div class="connect">
+                        <h1>Connect</h1>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email Address">
+                        <textarea name="" id="" cols="40%" rows="6" placeholder="Message"></textarea>
                     </div>
-                    <div class="cardcontent">
-                        <h3>EARTHLY DELIGHTS APPEAL</h3>
-                        <span>Jan 26, 2021</span>
-                        <p>Earthly delights is an exciting new artwork commissioned by Whitegold for St Austell to celebrate not only the town but also the far reaching impact of the Cornish china clay industry, its history and how that goes out into the UK, into...</p>
-                    </div>
-                </div>
-                <div class="col card">
-                    <div class="cardimg">
-                        <img src="./img/card3.gif" alt="">
-                    </div>
-                    <div class="cardcontent">
-                        <h3>VARNISHING DAY : A MOMENT IN TIME PORTFOLIO</h3>
-                        <span>Oct 14, 2020</span>
-                        <p>Made exclusively for the Friends of the Royal Academy, Varnishing Day: A Moment in Time features the work of 100 Royal Academicians. It took over three months to rally the Royal Academicians and organize this incredible portfolio of work....</p>
-                    </div>
+                    <h1>Email</h1>
+                    <p>karen.murat@davidmach.com</p>
+                    <h1>Studio</h1>
+                    <p>(by appointment only) <br>
+                        8 Havelock Walk, <br>
+                        London SE23 3HG</p> <br>
+                    <span>Tel : +44 (0) 208 6997984</span>
                 </div>
             </div>
-            <a href="#third">&lt;&lt;Older Entries</a>
         </div>
     </section>
     <footer>
@@ -162,10 +133,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- bootstrap script -->
+    <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -181,14 +150,12 @@
           el: ".swiper-pagination",
         },
         mousewheel: true,
-        freemode: true,
         keyboard: true,
-        loop: true,
+        loop:true,
         autoplay: {
-            delay: 3500,
+            delay: 3000,
             disableoninteraction: false,
-          },
-          
+        }
       });
     </script>
 </body>
